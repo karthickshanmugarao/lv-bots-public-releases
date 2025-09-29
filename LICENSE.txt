@@ -1,0 +1,41 @@
+END-USER LICENSE AGREEMENT (EULA)
+
+Copyright (c) 2025 Karthick Shanmuga Rao. All rights reserved.
+
+IMPORTANT: PLEASE READ THIS LICENSE AGREEMENT CAREFULLY BEFORE INSTALLING OR USING THIS SOFTWARE. 
+BY INSTALLING, COPYING, OR OTHERWISE USING THIS SOFTWARE, YOU AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT.
+
+1. GRANT OF LICENSE
+   You are granted a non-exclusive, non-transferable license to install and use this software strictly for 
+   personal, non-commercial purposes. All rights not expressly granted are reserved by the author.
+
+2. RESTRICTIONS
+   - You may not use this software for commercial purposes without prior written permission.
+   - You may not modify, adapt, translate, reverse-engineer, decompile, disassemble, or otherwise attempt to 
+     discover the source code or underlying algorithms of this software.
+   - You may not copy, distribute, rent, lease, sublicense, or otherwise transfer this software to any third party.
+   - You may not remove, alter, or obscure any proprietary notices or labels on this software.
+
+3. OWNERSHIP
+   This software is licensed, not sold. All title, ownership rights, and intellectual property rights in 
+   and to this software remain with the author.
+
+4. THIRD-PARTY COMPONENTS
+   This software may include third-party open-source components. These components are governed by their 
+   respective licenses, which are included in the "third_party_licenses" folder distributed with this software. 
+   By using this software, you agree to comply with the license terms of these third-party components.
+
+5. DISCLAIMER OF WARRANTY
+   THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO 
+   THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT. 
+
+6. LIMITATION OF LIABILITY
+   TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE AUTHOR SHALL NOT BE LIABLE FOR ANY DAMAGES ARISING OUT OF THE USE OR 
+   INABILITY TO USE THIS SOFTWARE.
+
+7. TERMINATION
+   This license is effective until terminated. It will terminate automatically without notice if you fail to comply 
+   with any term of this agreement. Upon termination, you must cease all use of the software and destroy all copies.
+
+By clicking "I ACCEPT" or by installing or using this software, you acknowledge that you have read, understood, and 
+agree to be bound by this agreement.

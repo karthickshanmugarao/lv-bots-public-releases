@@ -1,0 +1,18 @@
+{
+    "name": "scripting_create_vi",
+    "description": "Creates a New VI in the Given Path. Uses the Template VI path if specified",
+    "inputs_meta": {
+      "New VI File Path": {
+        "type": "str",
+        "description": "First number"
+      },
+      "Template VI Path": {
+        "type": "str",
+        "description": "Second number"
+      }
+    },
+      "outputs_meta": {
+
+    }
+  }
+  

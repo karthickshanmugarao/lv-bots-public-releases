@@ -1,0 +1,33 @@
+{
+  "name": "calculate_bmi",
+  "description": "Calculates BMI for given weight in kg and height in cm",
+  "inputs_meta": {
+    "bmi_inputs": {
+      "type": "object",
+      "description": "Object containing BMI input parameters",
+      "properties": {
+        "weight_in_kg": {
+          "type": "float",
+          "description": "Weight in kilograms"
+        },
+        "height_in_cm": {
+          "type": "float",
+          "description": "Height in centimeters"
+        }
+      },
+      "required": ["weight_in_kg", "height_in_cm"],
+      "default_value": {
+        "weight_in_kg": 0,
+        "height_in_cm": 0
+      }
+    }
+  },
+  "outputs_meta": {
+    "bmi": {
+      "type": "float",
+      "description": "Calculated BMI value"
+    }
+  }
+}
+
+  

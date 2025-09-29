@@ -1,0 +1,21 @@
+{
+    "name": "add",
+    "description": "Add two integers using LabVIEW VI",
+    "inputs_meta": {
+      "a": {
+        "type": "int",
+        "description": "First number"
+      },
+      "b": {
+        "type": "int",
+        "description": "Second number"
+      }
+    },
+      "outputs_meta": {
+        "sum": {
+          "type": "int",
+          "description": "Result of the add"
+        }
+    }
+  }
+  
