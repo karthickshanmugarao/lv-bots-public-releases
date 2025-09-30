@@ -1,25 +1,25 @@
 
-- [LV-Bots - `Enabling AI Agents to utilize LabVIEW Tools`](#lv-bots---enabling-ai-agents-to-utilize-labview-tools)
+- [lv-bots-mcp-server - `Enabling AI Agents to utilize LabVIEW Tools`](#lv-bots-mcp-server---enabling-ai-agents-to-utilize-labview-tools)
 - [1. Purpose and Long Term Vision](#1-purpose-and-long-term-vision)
   - [1.1. Purpose](#11-purpose)
   - [1.2. Feature Roadmap](#12-feature-roadmap)
-- [2. LV Bots in Action - Quick Setup and Run](#2-lv-bots-in-action---quick-setup-and-run)
+- [2. lv-bots in Action - Quick Setup and Run](#2-lv-bots-in-action---quick-setup-and-run)
 - [3. Current Features and Limitations](#3-current-features-and-limitations)
   - [3.1. Features](#31-features)
   - [3.2. Limitations of Current Version](#32-limitations-of-current-version)
 - [4. User Guide (Additional Details)](#4-user-guide-additional-details)
   - [4.1. Configuration and Metadata Files](#41-configuration-and-metadata-files)
-  - [4.2. Launching the LV-Bots](#42-launching-the-lv-bots)
+  - [4.2. Launching the lv-bots](#42-launching-the-lv-bots)
   - [4.3. AI Agent using the Example Tool VIs](#43-ai-agent-using-the-example-tool-vis)
-  - [4.4. LV-Bots Terminal Windows](#44-lv-bots-terminal-windows)
+  - [4.4. lv-bots Terminal Windows](#44-lv-bots-terminal-windows)
   - [4.5. A Note about LabVIEW Application Restart](#45-a-note-about-labview-application-restart)
   - [4.6. 📑 JSON Metadata File Format](#46--json-metadata-file-format)
     - [4.6.1. Metadata JSON](#461-metadata-json)
     - [4.6.2. Example](#462-example)
 
 
-# LV-Bots - `Enabling AI Agents to utilize LabVIEW Tools`
-LV-Bots is a Python-based **Model Context Protocol (MCP)** server that dynamically registers LabVIEW VIs as tools for AI agents / applications.  
+# lv-bots-mcp-server - `Enabling AI Agents to utilize LabVIEW Tools`
+lv-bots-mcp-server is a Python-based **Model Context Protocol (MCP)** server that dynamically registers LabVIEW VIs as tools for AI agents / applications.  
 
 
 # 1. Purpose and Long Term Vision
@@ -36,14 +36,14 @@ LV-Bots is a Python-based **Model Context Protocol (MCP)** server that dynamical
 5. ✅ **Tool chaining** – In Future Enable advanced workflows where **outputs from one VI can serve as inputs for another**, allowing AI agents to intelligently chain LabVIEW tools to perform complex tasks.  
  
 
-# 2. LV Bots in Action - Quick Setup and Run
+# 2. lv-bots in Action - Quick Setup and Run
 1. Download the Setup Zip file from the Releases. Unzip and Run the Installer.
    1. [Alpha v0.3 Setup - Download Link](https://github.com/karthickshanmugarao/lv-bots-public-releases/releases/download/lv-bots-alpha-v0.3/LV-Bots-Setup-v0.3.3.zip)
-2. LV Bots will be installed at `C:\lv-bots`
+2. lv-bots will be installed at `C:\lv-bots`
 3. Add your `OPENAI_API_KEY` in the `C:\lv-bots\.env`
 4. Open and run the `C:\lv-bots\lv_bots_launcher.vi` in LabVIEW (32-bit) to launch the MCP Server.
 5. Two terminals will be opened
-   1. One for LV Bots MCP Server, and 
+   1. One for lv-bots MCP Server, and 
    2. Another for the Example AI Agent. 
    3. Interact with the agent in the terminal which can run the tools based on the prompts.
 6. **Example Tools** are available at `C:\lv-bots\mcp_tool_vis`
@@ -58,14 +58,14 @@ LV-Bots is a Python-based **Model Context Protocol (MCP)** server that dynamical
 9.   To include more tool VIs - Add the VIs and respective Metadata files in the folders `mcp_tool_vis` and `mcp_tools_metadata`.
      1.   The folder locations can be changed by modifying few keys in `.env` and `lv_bots_executor_config.ini`. Refer the `User Guide` Section.
      2.   Refer [4.6.1. Metadata JSON](#461-metadata-json) to create metadata files for new tool VIs.
-10.    **Closing LV Bots** - To exit LV Bots, close all the open terminals and the lv_bots_executor_service VI front panel.
+10.    **Closing lv-bots** - To exit lv-bots, close all the open terminals and the lv_bots_executor_service VI front panel.
 11.    Refer [User Guide](#4-user-guide-additional-details) for more details
 
 # 3. Current Features and Limitations
 ## 3.1. Features
 - **MCP Tool Registration** – MCP Tools registerd for each `.json` file in the metadata folder.
-- **MCP Server** – The tools registered in LV Bots MCP Server can be used by any AI Agent / Platform that supports the Model Context Protocol.
-- **LabVIEW VI Execution** – MCP Server executes LabVIEW VIs using a separate LV Bots Executor service.
+- **MCP Server** – The tools registered in lv-bots MCP Server can be used by any AI Agent / Platform that supports the Model Context Protocol.
+- **LabVIEW VI Execution** – MCP Server executes LabVIEW VIs using a separate lv-bots Executor service.
 - **Example AI Agent** - An Example AI Agent is available to interact over a terminal window. This requires OpenAI API Key in `.env`.
 
 ## 3.2. Limitations of Current Version
@@ -97,7 +97,7 @@ LV-Bots is a Python-based **Model Context Protocol (MCP)** server that dynamical
      - ![example-env-screenshot](images/example_env_screenshot.png "Example .env")
      - `intermediate_tools_dir` - `optional config` – Output Directory to store generated MCP tool `.py` files. These intermediate files will be generated only for debugging purposes when using the following script `g_mcp_server_with_tool_py_generation.py` 
 
-2. **LV Executor configuration INI**
+2. **lv-bots Executor configuration INI**
    - `No changes needed if you are just trying examples in this repo`
    - Open the following configuration file `lv_bots_executor_config.ini`
    - Configure `tools_directory` as the Absolute path of the Folder which contains the tool VIs to be used by AI agents.
@@ -117,8 +117,8 @@ LV-Bots is a Python-based **Model Context Protocol (MCP)** server that dynamical
    - Examples are stored in the `mcp_tool_vis/` folder.  
    - The VI file name should match the JSON file name.
 
-## 4.2. Launching the LV-Bots
-1. To launch the LV Bots, **Open and run the `lv_bots_launcher.vi`**  which will open terminal windows explained in the section **`LV-Bots Terminal Windows`**
+## 4.2. Launching the lv-bots
+1. To launch the lv-bots, **Open and run the `lv_bots_launcher.vi`**  which will open terminal windows explained in the section **`lv-bots Terminal Windows`**
 
 ## 4.3. AI Agent using the Example Tool VIs
 1. After the VI `lv_bots_launcher.vi` is run, the Example AI Agent terminal window will allow user to interact with AI agent that can list the tools and run them based on prompts.
@@ -132,7 +132,7 @@ LV-Bots is a Python-based **Model Context Protocol (MCP)** server that dynamical
 4. **Metadata JSON Files** that describes the tools are at `C:\lv-bots\mcp_tools_metadata`. 
    1. The metadata folder can be changed to different location by updating the `metadata_dir` key in `.env`
 
-## 4.4. LV-Bots Terminal Windows
+## 4.4. lv-bots Terminal Windows
 Following are the different terminal windows that will be launched by the VI `lv_bots_launcher.vi`.
 
    1. `lv-bots MCP Server` - This is the MCP server with which AI agents will communicate. This will:
@@ -146,7 +146,7 @@ Following are the different terminal windows that will be launched by the VI `lv
      - ![example-agent-screenshot](images/lv_bots_example_agent_screenshot.png "Start and test AI Agent integrated with MCP")
   
 ## 4.5. A Note about LabVIEW Application Restart
-1. In case of any error during LV Bots Launch using the `lv_bots_launcher.vi`, retry the launcher after closing all files in LabVIEW using `File --> Close All` or `File --> Quit`.
+1. In case of any error during lv-bots Launch using the `lv_bots_launcher.vi`, retry the launcher after closing all files in LabVIEW using `File --> Close All` or `File --> Quit`.
 
 ## 4.6. 📑 JSON Metadata File Format
 
