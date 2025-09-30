@@ -38,7 +38,7 @@ lv-bots-mcp-server is a Python-based **Model Context Protocol (MCP)** server tha
 
 # 2. lv-bots in Action - Quick Setup and Run
 1. Download the Setup Zip file from the Releases. Unzip and Run the Installer.
-   1. [Alpha v0.3 Setup - Download Link](https://github.com/karthickshanmugarao/lv-bots-public-releases/releases/download/lv-bots-alpha-v0.3/LV-Bots-Setup-v0.3.3.zip)
+   1. [Alpha v0.3 Setup - Download Link](https://github.com/karthickshanmugarao/lv-bots-public-releases/releases/download/lv-bots-alpha-v0.3/lv-bots-mcp-setup-v0.3.3.zip)
 2. lv-bots will be installed at `C:\lv-bots`
 3. Add your `OPENAI_API_KEY` in the `C:\lv-bots\.env`
 4. Open and run the `C:\lv-bots\lv_bots_launcher.vi` in LabVIEW (32-bit) to launch the MCP Server.
