@@ -187,3 +187,4 @@ Following are the keys expected in Metadata JSON
   }
 }
 ```
+`See AI-USAGE.md for details on AI-assisted development.`
